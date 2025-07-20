@@ -3,11 +3,19 @@ import streamlit as st
 from arithmetic_arranger import arithmetic_arranger 
 
 
-st.set_page_config(page_title="Formateador Aritmético", page_icon="🔢")
+st.set_page_config(page_title="¡Organizador de Operaciones Matemáticas!", page_icon="🔢")
 
-st.title("🔢 Formateador Aritmético")
+st.title("🔢 ¡Organizador de Operaciones Matemáticas!")
 
-st.write("Bienvenido al formateador de problemas aritméticos. Ingresá sumas o restas, una por línea.")
+st.write("""
+¡Hola! Esta es una pequeña herramienta que creé para ayudarte a **organizar y ver de forma clara sumas y restas**.
+
+Simplemente ingresa una o varias operaciones (una por línea) en el cuadro de abajo, por ejemplo:
+`32 + 698`
+`123 - 45`
+
+Luego, haz clic en "Formatear Problemas" y verás cómo los números se alinean perfectamente, ¡como en una hoja de cálculo! También puedes elegir ver las respuestas.
+Reglas: Máximo 4 Dígitos""")
 
 
 problems_example = "32 + 698\n3801 - 2\n45 + 43\n123 + 49"
